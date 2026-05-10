@@ -8,15 +8,13 @@
 /.vs/VSWorkspaceState.json
 /.vs/slnx.sqlite
 /.vs/gis-2026/*
-/lab2/client/.idea/
+/lab2/client/.idea/*
 /lab2/client/client_gis/public/favicon.svg
 /lab2/client/client_gis/public/icons.svg
-/lab2/client/client_gis/src/assets/hero.png
-/lab2/client/client_gis/src/assets/javascript.svg
-/lab2/client/client_gis/src/assets/vite.svg
+/lab2/client/client_gis/src/assets/*
 /lab2/geoserver_data/gwc/diskquota_page_store_hsql/diskquota.log
 /lab2/geoserver_data/gwc/geowebcache_2026-04-18T083617.bak
 /lab2/geoserver_data/logs/geoserver.log
 /lab2/geoserver_data/tomcat_pass.txt
 
-/lab2/client/.idea/.gitignore
+
