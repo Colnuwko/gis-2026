@@ -6,19 +6,6 @@ import OSM from 'ol/source/OSM';
 import ImageLayer from 'ol/layer/Image';
 import ImageWMS from 'ol/source/ImageWMS';
 
-const map = new Map({
-  target: 'map',
-  layers: [
-    new TileLayer({
-      source: new OSM()
-    })
-  ],
-  view: new View({
-    center: [0, 0],
-    zoom: 2
-  })
-});
-
 const wmsUrl = 'http://localhost:8080/geoserver/gis/wms';
 
 // Слой "Здания"
@@ -66,11 +53,24 @@ const poiLayer = new ImageLayer({
   visible: true
 });
 
-map.addLayer(buildingsLayer);
-map.addLayer(roadsLayer);
-map.addLayer(poiLayer);
+const map = new Map({
+  target: 'map',
+  layers: [
+    new TileLayer({
+      source: new OSM()
+    }),
+    buildingsLayer,
+    roadsLayer,
+    poiLayer
+  ],
+  view: new View({
+    center: [50.482017517089844, 54.29159164428711],
+    zoom: 15,
+    projection: 'EPSG:4326'
+  })
+});
 
-// --- 3. (Опционально) Управление видимостью через кнопки ---
+// Управление видимостью через кнопки
 document.getElementById('toggleBuildings').addEventListener('click', () => {
   buildingsLayer.setVisible(!buildingsLayer.getVisible());
 });
@@ -82,9 +82,3 @@ document.getElementById('toggleRoads').addEventListener('click', () => {
 document.getElementById('togglePoi').addEventListener('click', () => {
   poiLayer.setVisible(!poiLayer.getVisible());
 });
-
-
-const center = [50.482017517089844, 54.29159164428711]; // координаты из геосервера чтоб сразу было
-import { fromLonLat } from 'ol/proj';
-map.getView().setCenter(fromLonLat(center));
-map.getView().setZoom(15);

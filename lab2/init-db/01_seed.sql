@@ -1,6 +1,6 @@
 ﻿
 -- ===================== DDL: Таблицы =====================
-
+CREATE EXTENSION IF NOT EXISTS postgis;
 -- Здания (полигональные объекты)
 DROP TABLE IF EXISTS buildings CASCADE;
 CREATE TABLE buildings (
