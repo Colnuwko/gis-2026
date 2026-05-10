@@ -19,3 +19,4 @@
 /lab2/geoserver_data/logs/geoserver.log
 /lab2/geoserver_data/tomcat_pass.txt
 
+/lab2/client/.idea/.gitignore
