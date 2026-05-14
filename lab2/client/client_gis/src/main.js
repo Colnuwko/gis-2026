@@ -5,6 +5,7 @@ import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import ImageLayer from 'ol/layer/Image';
 import ImageWMS from 'ol/source/ImageWMS';
+import {fromLonLat} from "ol/proj.js";
 
 const wmsUrl = 'http://localhost:8080/geoserver/gis/wms';
 
@@ -64,9 +65,9 @@ const map = new Map({
     poiLayer
   ],
   view: new View({
-    center: [50.482017517089844, 54.29159164428711],
+    center: fromLonLat([50.482017517089844, 54.29159164428711]),
     zoom: 15,
-    projection: 'EPSG:4326'
+    projection: 'EPSG:3857'
   })
 });
 
