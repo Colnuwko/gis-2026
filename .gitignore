@@ -10,5 +10,6 @@
 *.log
 /lab2/geoserver_data/gwc/geowebcache_2026-04-18T083617.bak
 /lab2/geoserver_data/tomcat_pass.txt
+/lab2/geoserver_data/gwc/diskquota_page_store_hsql/diskquota.lck
 
 
