@@ -2,19 +2,13 @@
 # Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/gis-2026/FileContentIndex/*.vsidx
-/.vs/gis-2026/v17/.wsuo
-/.vs/gis-2026/v17/DocumentLayout.json
-/.vs/VSWorkspaceState.json
-/.vs/slnx.sqlite
-/.vs/gis-2026/*
+.vs/
 /lab2/client/.idea/*
 /lab2/client/client_gis/public/favicon.svg
 /lab2/client/client_gis/public/icons.svg
 /lab2/client/client_gis/src/assets/*
-/lab2/geoserver_data/gwc/diskquota_page_store_hsql/diskquota.log
+*.log
 /lab2/geoserver_data/gwc/geowebcache_2026-04-18T083617.bak
-/lab2/geoserver_data/logs/geoserver.log
 /lab2/geoserver_data/tomcat_pass.txt
 
 
