@@ -1,0 +1,24 @@
+{
+  "version": 8,
+  "sources": {},
+  "layers": [
+    {
+      "id": "buildings",
+      "type": "fill",
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "source_type"],
+
+          "my", "#00aa00",
+          "osm", "#0066ff",
+          "ml", "#ff8800",
+
+          "#999999"
+        ],
+
+        "fill-opacity": 0.7
+      }
+    }
+  ]
+}

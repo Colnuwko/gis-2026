@@ -13,3 +13,9 @@
 /lab2/geoserver_data/gwc/diskquota_page_store_hsql/diskquota.lck
 
 
+/lab3/duckdb/duckdb.exe
+/lab2/geoserver_data/gwc/diskquota_page_store_hsql/diskquota.script
+/lab2/geoserver_data/gwc/diskquota_page_store_hsql/diskquota.data
+/lab2/geoserver_data/security/usergroup/default/users.xml
+/lab3/GeoJson.geojson
+/lab2/geoserver_data/gwc/diskquota_page_store_hsql/diskquota.properties
