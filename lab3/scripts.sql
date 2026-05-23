@@ -8,7 +8,8 @@ CREATE OR REPLACE TABLE user_buildings AS
 SELECT
     geom::GEOMETRY AS geom,
     id,
-    building
+    building,
+    user
 FROM ST_Read('C:\Users\Colnuwko\source\repos\Colnuwko\gis-2026\lab3\GeoJson.geojson');
 
 
@@ -57,7 +58,7 @@ SELECT
         WHEN EXISTS (
             SELECT 1
             FROM user_buildings u
-            WHERE ST_Intersects(o.geometry, u.geom)
+            WHERE ST_Intersects(o.geometry, u.geom) AND u.user = 'Colnuwko'
         )
         THEN 'my'
 
